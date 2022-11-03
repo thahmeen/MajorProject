@@ -44,10 +44,17 @@ app.get('/motivation', (req, res)=>{
     res.render('motivation');
 })
 
+app.get('/chatbot', (req, res)=>{
+    res.render('chatbot');
+})
+
 app.get('/classupdates', (req, res)=>{
     res.render('classupdates');
 })
 
+app.get('/rotation', (req, res)=>{
+    res.render('rotation');
+})
 app.get('*', (req,res)=>{
     res.render('404error');
 });
